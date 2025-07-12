@@ -2,6 +2,157 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #427AA1;
+}
+
+header img {
+    width: 100vw;
+}
+
+nav {
+    background-color: #A5BE00;
+    border-radius: 2rem;
+    margin: 2vh 2vw;
+    padding: 0.5rem 0rem;
+}
+
+nav::selection {
+    background-color: #679436;
+    color: #EBF2FA;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #05668D;
+    transition: 0.5s;
+    font-size: 2.5vw;
+}
+
+li a:hover {
+    color: #EBF2FA;
+    transform: scale(1.2);
+}
+
+#notice {
+    text-align: center;
+    background-color: #EBF2FA;
+    border-radius: 2rem;
+    margin: 2vh 3vw;
+    padding: 0.75rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#notice img {
+    width: 100%;
+    grid-row: span 2;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+#notice h1 {
+    color: #679436;
+    padding-top: 2vh;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.25vw;
+}
+
+#notice p {
+    color: #679436;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+#notice::selection {
+    background-color: #A5BE00;
+    color: #05668D;
+}
+
+#welcome {
+    text-align: center;
+    color: #EBF2FA;
+    margin: 1rem 1.5rem;
+}
+
+#welcome h1 {
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.25vw;
+}
+
+#welcome p {
+    font-size: 3vw;
+}
+
+#welcome::selection {
+    background-color: #A5BE00;
+    color: #05668D;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem 1.0rem;
+}
+
+@media (max-width: 768px) {
+  #options {
+    grid-template-columns: 1fr;
+  }
+}
+
+#options section {
+    margin: 1vw 1vh;
+    background-color: #EBF2FA;
+    padding: 1.5vh 1.5vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #679436;
+}
+
+#options section h2 {
+    font-size: 4vh;
+    font-weight: 800;
+    margin-bottom: 0.75vh;
+}
+
+#options section p {
+    font-size: 3vh;
+}
+
+#options section img {
+    grid-row: span 2;
+    width: 100%;
+    user-select: none;
+}
+
+#options::selection {
+    background-color: #A5BE00;
+    color: #427AA1;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: #EBF2FA;
+    margin-bottom: 1vh;
+}
+
+footer::selection {
+    background-color: #A5BE00;
+    color: #05668D;
 }
