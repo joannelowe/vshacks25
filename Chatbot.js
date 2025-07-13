@@ -15,7 +15,7 @@ class DiagnosisBot {
         ];
         this.doctor = [
             "rash", "dizzy", "fatigue", "blurred vision", "discomfort",
-            "unusual pain", "stomach issues", "numbness", "swollen", "infection"
+            "unusual pain", "stomach issues", "numbness", "swollen", "infection", "pain"
         ];
         this.emergency = [
             "can't breathe", "cant breathe", "severe", "heart attack", "stroke",
