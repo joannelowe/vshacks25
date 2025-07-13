@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>VS HACKS 2025</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="light.png" media="(prefers-color-scheme: light)">
+        <link rel="icon" type="image/png" href="dark.png" media="(prefers-color-scheme: dark)"> 
+    </head>
+    <body>
+        <header>
+            <img src="header.png" alt="header logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="https://joannelowe.github.io/vshacks25/index.html">home</a></li>
+                <li><a href="https://joannelowe.github.io/vshacks25/chatbot.html">chatbot</a></li>
+                <li><a href="https://joannelowe.github.io/vshacks25/medicine.html">medicine</a></li>
+                <li><a href="https://joannelowe.github.io/vshacks25/water.html">water</a></li>
+                <li><a href="https://joannelowe.github.io/vshacks25/exercises.html">exercises</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="water-div">
+                <section id="water-info">
+                    <p>How much water does your bottle hold? (mL)</p>
+                    <input type="number" id="bottle-size" min="0" placeholder="Enter bottle size in mL">
+                    <p>How many bottles have you consumed today?</p>
+                    <input type="number" id="bottles-consumed" min="0" placeholder="Enter number of bottles consumed">
+                    <button id="calculate-button" onclick="saveInput()">Calculate</button>
+                    <p>Progress bar:</p>
+                    <progress id = "progress" value = "0" max = "2000"></progress>
+                </section>
+                <section id="water-tracker">
+                    <img src="three dark.png" alt="water cup">
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>VS HACKS 2025 PROJECT made by Dhruv, Joanne & Vanessa</p>
+        </footer>
+    </body>
+</html>
+
+<script>
+    function saveInput() {
+        const bottleSize = document.getElementById('bottle-size').value;
+        const bottlesConsumed = document.getElementById('bottles-consumed').value;
+        progress.value = bottleSize * bottlesConsumed;
+    }
+</script>

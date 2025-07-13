@@ -193,6 +193,49 @@ li a:hover {
     border-color: #A5BE00;
 }
 
+#water-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#water-div p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #EBF2FA;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+#water-div input {
+    width: 60%;
+    height: 10%;
+    border-radius: 2vw;
+    padding: 1vw;
+    border-color: #A5BE00;
+}
+
+#water-div progress {
+    width: 70%;
+    height: 3vh;
+}
+
+#water-div progress::-webkit-progress-bar {
+  background-color: #EBF2FA;
+}
+
+#water-div progress::-webkit-progress-value {
+  background-color: #A5BE00;
+}
+
+#water-div progress::-moz-progress-bar { 
+  background-color: #A5BE00;
+}
+
+#water-div img {
+    width: 75%;
+}
+
 footer {
     text-align: center;
     font-weight: bold;
