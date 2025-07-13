@@ -106,7 +106,7 @@ li a:hover {
 #options {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1.5rem 1.0rem;
+    margin: 1vh 1vw;
 }
 
 @media (max-width: 768px) {
@@ -116,9 +116,9 @@ li a:hover {
 }
 
 #options section {
-    margin: 1vw 1vh;
+    margin: 2vh 1vw;
     background-color: #EBF2FA;
-    padding: 1.5vh 1.5vw;
+    padding: 1.5vh 3vw;
     display: grid;
     grid-template-columns: 2fr 1fr;
     color: #679436;
