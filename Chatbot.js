@@ -20,7 +20,7 @@ class DiagnosisBot {
         this.emergency = [
             "can't breathe", "cant breathe", "severe", "heart attack", "stroke",
             "unconscious", "uncontrollable", "bleeding", "seizure",
-            "poison", "dying", "overdose", "suicidal"
+            "poison", "dying", "overdose", "suicidal", "fatal", "cancer", "death"
         ];
 
         this.mildResponses = [
