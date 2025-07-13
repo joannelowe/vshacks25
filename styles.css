@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
 }
 
 body {
     background-color: #427AA1;
+    font-family: 'Poppins';
 }
 
 header img {
@@ -67,8 +67,9 @@ li a:hover {
     color: #679436;
     padding-top: 2vh;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Luckiest Guy';
     font-size: 4.25vw;
+    letter-spacing: 0.25vw;
 }
 
 #notice p {
@@ -90,8 +91,9 @@ li a:hover {
 
 #welcome h1 {
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Luckiest Guy';
     font-size: 4.25vw;
+    letter-spacing: 0.25vw;
 }
 
 #welcome p {
@@ -129,6 +131,8 @@ li a:hover {
     font-size: 4vh;
     font-weight: 800;
     margin-bottom: 0.75vh;
+    font-family: 'Luckiest Guy';
+    letter-spacing: 0.25vw;
 }
 
 #options section p {
@@ -160,6 +164,8 @@ li a:hover {
     font-size: 4.5vh;
     font-weight: 800;
     color: #A5BE00;
+    font-family: 'Luckiest Guy';
+    letter-spacing: 0.25vw;
 }
 
 #bobbytalk p {
@@ -191,6 +197,14 @@ li a:hover {
     color: #05668D;
     background-color: #EBF2FA;
     border-color: #A5BE00;
+    transition: 0.3s;
+}
+
+#bobbytalk button:hover {
+    background-color: #A5BE00;
+    scale: 0.9;
+    color: #05668D;
+    font-weight: bold;
 }
 
 #water-div {
@@ -215,6 +229,23 @@ li a:hover {
     border-color: #A5BE00;
 }
 
+#water-div button {
+    width: 40%;
+    border-radius: 2vw;
+    margin-top: 2vw;
+    padding: 2vh 0vw;
+    transition: 0.3s;
+    color: #05668D;
+    background-color: #EBF2FA;
+}
+
+#water-div button:hover {
+    background-color: #A5BE00;
+    scale: 0.9;
+    color: #05668D;
+    font-weight: bold;
+}
+
 #water-div progress {
     width: 70%;
     height: 3vh;
@@ -223,13 +254,13 @@ li a:hover {
 
 #water-div progress::-webkit-progress-bar {
     background-color: #EBF2FA !important;
-    border-radius: 5px;
+    border-radius: 2vw;
 }
 
 #water-div progress::-webkit-progress-value {
   background-color: #A5BE00 !important;
   background-image: none !important;
-  border-radius: 5px !important;
+  border-radius: 2vw !important;
 }
 
 #water-div img {
