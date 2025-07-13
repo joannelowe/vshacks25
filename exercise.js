@@ -70,19 +70,19 @@ function printExercisesByMuscleGroup(exercises, muscleGroups) {
 
 // Code that runs
 const exercises = [
-    Exercise("Push-up", "strength", ["Chest", "Triceps", "Shoulders"], []),
-    Exercise("Squat", "strength", ["Quads", "Glutes", "Hamstrings"], []),
-    Exercise("Jumping Jack", "cardio", [], []),
-    Exercise("Plank", "strength", ["Core", "Shoulders", "Back"], []),
-    Exercise("Burpees", "cardio", [], []),
-    Exercise("Bicep Curls", "strength", ["Biceps"], ["Dumbbells"]),
-    Exercise("Running", "cardio", ["Legs", "Core"], []),
-    Exercise("Lunges", "strength", ["Glutes", "Hamstrings", "Quads"], ["Dumbbells"]),
-    Exercise("Jump Rope", "cardio", ["Calves", "Shoulders", "Core"], ["Jump Rope"]),
-    Exercise("Bench Press", "strength", ["Chest", "Triceps", "Shoulders"], ["Barbell", "Bench"]),
-    Exercise("Pull-up", "strength", ["Back", "Biceps", "Shoulders"], ["Pull-up Bar"]),
-    Exercise("Deadlift", "strength", ["Hamstrings", "Glutes", "Back"], ["Barbell"]),
-    Exercise("Tricep Dip", "strength", ["Triceps", "Shoulders"], ["Bench"]),
-    Exercise("Leg Press", "strength", ["Quads", "Glutes", "Hamstrings"], ["Leg Press Machine"]),
-    Exercise("Crunches", "strength", ["Abs"], [])
+    new Exercise("Push-up", "strength", ["Chest", "Triceps", "Shoulders"], []),
+    new Exercise("Squat", "strength", ["Quads", "Glutes", "Hamstrings"], []),
+    new Exercise("Jumping Jack", "cardio", [], []),
+    new Exercise("Plank", "strength", ["Core", "Shoulders", "Back"], []),
+    new Exercise("Burpees", "cardio", [], []),
+    new Exercise("Bicep Curls", "strength", ["Biceps"], ["Dumbbells"]),
+    new Exercise("Running", "cardio", ["Legs", "Core"], []),
+    new Exercise("Lunges", "strength", ["Glutes", "Hamstrings", "Quads"], ["Dumbbells"]),
+    new Exercise("Jump Rope", "cardio", ["Calves", "Shoulders", "Core"], ["Jump Rope"]),
+    new Exercise("Bench Press", "strength", ["Chest", "Triceps", "Shoulders"], ["Barbell", "Bench"]),
+    new Exercise("Pull-up", "strength", ["Back", "Biceps", "Shoulders"], ["Pull-up Bar"]),
+    new Exercise("Deadlift", "strength", ["Hamstrings", "Glutes", "Back"], ["Barbell"]),
+    new Exercise("Tricep Dip", "strength", ["Triceps", "Shoulders"], ["Bench"]),
+    new Exercise("Leg Press", "strength", ["Quads", "Glutes", "Hamstrings"], ["Leg Press Machine"]),
+    new Exercise("Crunches", "strength", ["Abs"], [])
 ];
