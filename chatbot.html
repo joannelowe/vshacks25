@@ -27,11 +27,14 @@
             <section id="bobbytalk">
                 <img src="light bobby.png" alt="bobby">
                 <div>
-                    <h2>Talk to Bobby:</h2>
-                    <input placeholder="ask bobby anything!">
-                    <button onClick="processInput()">Send</button>
+                    <h2>Ask Bobby anything!:</h2>
+                    <form id="form">
+                        <input type="text" id="inp" name="input"></input>
+                        <button type="submit">Submit</button>
+                    </form>
                     <h2>Bobby's response:</h2>
-                    <p>Sample output!</p>
+                    <textarea id="res"></textarea>
+                    <script src="Chatbot.js"></script>
                 </div>
             </section>
         </main>

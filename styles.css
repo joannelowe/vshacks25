@@ -191,7 +191,7 @@ li a:hover {
 
 #bobbytalk button {
     width: 30%;
-    height: 20%;
+    height: 30%;
     font-size: 1.75vw;
     border-radius: 3vw;
     color: #05668D;
@@ -205,6 +205,19 @@ li a:hover {
     scale: 0.9;
     color: #05668D;
     font-weight: bold;
+}
+
+#res {
+    width: 70%;
+    height: 50%;
+    font-family: 'Poppins';
+    font-size: 1.25vw;
+    border-radius: 2vw;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    color: #05668D;
+    background-color: #EBF2FA;
+    border-color: #A5BE00;
 }
 
 #water-div {
