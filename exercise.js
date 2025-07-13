@@ -1,9 +1,16 @@
+
+let allMuscles = []
+let allEquipment = []
+
 class Exercise {
     constructor(name, type, muscleGroups, equipment) {
         this.name = name;
         this.type = type;
         this.muscleGroups = muscleGroups;
         this.equipment = equipment;
+
+        allMuscles = Array.from(new Set([...allMuscles, ...muscleGroups]))
+        allEquipment = Array.from(new Set([...allEquipment, ...equipment]))
     }
 
     getName() {
@@ -20,7 +27,7 @@ class Exercise {
     }
 }
 
-function returnByType (exercises, type) {
+function returnByType(exercises, type) {
     let exerciseByType = [];
     for (const exercise of exercises) {
         if (exercise.getType() === type) {
@@ -87,9 +94,59 @@ const exercises = [
     new Exercise("Crunches", "strength", ["Abs"], [])
 ];
 
-const list = document.getElementById("exercise-list");
-for(let exercise in exercises) {
-    const li = document.createElement("li");
-    li.textContent = exercises[exercise].getName();
-    list.appendChild(li);
+function redoList(allowedExercises) {
+    const list = document.getElementById("exercise-list");
+    list.innerHTML = ""
+    for (let exercise of allowedExercises) {
+        const li = document.createElement("li");
+        li.textContent = exercise.getName();
+        list.appendChild(li);
+    }
 }
+
+redoList(exercises)
+let type = 'all'
+
+allMuscles.forEach(e => {
+    let opt = document.createElement('input')
+    opt.type = 'checkbox'
+    opt.value = e
+    opt.id = e
+    opt.name = 'muscles'
+    let label = document.createElement('label')
+    label.for = e
+    label.innerText = e
+    document.getElementById("muscles").appendChild(opt)
+    document.getElementById('muscles').appendChild(label)
+})
+
+allEquipment.forEach(e => {
+    let opt = document.createElement('input')
+    opt.type = 'checkbox'
+    opt.value = e
+    opt.id = e
+    opt.name = 'equipment'
+    let label = document.createElement('label')
+    label.for = e
+    label.innerText = e
+    document.getElementById("equipment").appendChild(opt)
+    document.getElementById('equipment').appendChild(label)
+})
+
+console.log(allEquipment, allMuscles)
+
+document.getElementById('form').addEventListener('submit', e => {
+    e.preventDefault()
+    let formdata = new FormData(e.target)
+
+    const musclesSelected = Array.from(document.querySelectorAll('input[name="muscles"]:checked')).map(a => a.value);
+    const equipmentSelected = Array.from(document.querySelectorAll('input[name="equipment"]:checked')).map(a => a.value);
+    type = formdata.get("type")
+
+    redoList(exercises.filter(e => {
+        let typeAllowed = (type == 'all' || e.type == type);
+        let musclesAllowed = musclesSelected.filter(a => e.muscleGroups.includes(a)).length == musclesSelected.length
+        let equipmentAllowed = e.equipment.filter(a => equipmentSelected.includes(a)).length == e.equipment.length
+        return typeAllowed && musclesAllowed && equipmentAllowed
+    }))
+})
