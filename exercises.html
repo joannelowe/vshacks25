@@ -23,8 +23,38 @@
                 <li><a href="https://joannelowe.github.io/vshacks25/exercises.html">exercises</a></li>
             </ul>
         </nav>
+        <main>
+            <section id="filter">
+                <form>
+                    <div>
+                        <input type="radio" value="cardio" id="option1" name="type">
+                        <label for="option1">cardio</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="filter by muscle group" id="muscles">
+                        <button id="musclegroups">filter</button>
+                    </div>
+                    <div>
+                        <input type="radio" value="strength" id="option2" name="type">
+                        <label for="option2">strength</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="filter by equipment" id="equipment">
+                        <button >filter</button>
+                    </div>
+                </form>
+            </section>
+            <section id="exercising">
+                <div>
+                    <ul id="exercise-list"></ul>
+                    <script src="exercise.js"></script>
+                </div>
+                <img src="one.png">
+            </section>
+        </main>
         <footer>
             <p>VS HACKS 2025 PROJECT made by Dhruv, Joanne & Vanessa</p>
         </footer>
+        <script src="musclefilter.js"></script>
     </body>
 </html>

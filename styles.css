@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  box-sizing: border-box; 
+}
+
 body {
     background-color: #427AA1;
     font-family: 'Poppins';
@@ -278,6 +285,52 @@ li a:hover {
 
 #water-div img {
     width: 75%;
+}
+
+#filter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2vw;
+}
+
+#filter label {
+    color: #A5BE00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#filter input[type="radio"] {
+    accent-color: #679436;
+}
+
+#filter input[type="text"] {
+    border-radius: 2vw;
+    padding: 1vh 1vw;
+    margin: 0.5vh 0vw;
+    border-color: #679436;
+    width: 70%;
+    height: 80%
+}
+
+#exercise-list {
+    color: #EBF2FA;
+    margin-left: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+#exercising {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 4vh 0vw;
+}
+
+#exercising img {
+    width: 80%;
+    margin-right: 6vw;
+    border-radius: 2vw;
 }
 
 footer {

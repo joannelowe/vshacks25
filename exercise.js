@@ -86,3 +86,10 @@ const exercises = [
     new Exercise("Leg Press", "strength", ["Quads", "Glutes", "Hamstrings"], ["Leg Press Machine"]),
     new Exercise("Crunches", "strength", ["Abs"], [])
 ];
+
+const list = document.getElementById("exercise-list");
+for(let exercise in exercises) {
+    const li = document.createElement("li");
+    li.textContent = exercises[exercise].getName();
+    list.appendChild(li);
+}
