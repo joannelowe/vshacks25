@@ -218,18 +218,18 @@ li a:hover {
 #water-div progress {
     width: 70%;
     height: 3vh;
+    appearance: none;
 }
 
 #water-div progress::-webkit-progress-bar {
-  background-color: #EBF2FA;
+    background-color: #EBF2FA !important;
+    border-radius: 5px;
 }
 
 #water-div progress::-webkit-progress-value {
-  background-color: #A5BE00;
-}
-
-#water-div progress::-moz-progress-bar { 
-  background-color: #A5BE00;
+  background-color: #A5BE00 !important;
+  background-image: none !important;
+  border-radius: 5px !important;
 }
 
 #water-div img {
