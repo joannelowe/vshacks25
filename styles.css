@@ -17,7 +17,7 @@ nav {
     background-color: #A5BE00;
     border-radius: 2rem;
     margin: 2vh 2vw;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
 }
 
 nav::selection {
@@ -38,7 +38,7 @@ li a {
     font-weight: bold;
     color: #05668D;
     transition: 0.5s;
-    font-size: 2.5vw;
+    font-size: 1.25rem;
 }
 
 li a:hover {
@@ -146,11 +146,60 @@ li a:hover {
     color: #427AA1;
 }
 
+#bobbytalk{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5vh;
+}
+
+#bobbytalk img {
+    width: 100%;
+}
+
+#bobbytalk h2 {
+    font-size: 4.5vh;
+    font-weight: 800;
+    color: #A5BE00;
+}
+
+#bobbytalk p {
+    color: #EBF2FA;
+    font-size: 1.5rem;
+
+}
+
+#bobbytalk input {
+    height: 20%;
+    width: 60%;
+    font-size: 1.15rem;
+    border-radius: 3vw;
+    padding: 1vh 2vw;
+    background-color: #EBF2FA;
+    margin: 1.5vh 0.5vw;
+    border-color: #A5BE00;;
+}
+
+#bobbytalk input::placeholder {
+    font-size: 1.15rem;
+}
+
+#bobbytalk button {
+    width: 30%;
+    height: 20%;
+    font-size: 1.75vw;
+    border-radius: 3vw;
+    color: #05668D;
+    background-color: #EBF2FA;
+    border-color: #A5BE00;
+}
+
 footer {
     text-align: center;
     font-weight: bold;
     color: #EBF2FA;
     margin-bottom: 1vh;
+    position: sticky;
+    bottom: 0; 
 }
 
 footer::selection {
