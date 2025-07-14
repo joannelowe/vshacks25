@@ -108,29 +108,36 @@ redoList(exercises)
 let type = 'all'
 
 allMuscles.forEach(e => {
+    let div = document.createElement('div')
     let opt = document.createElement('input')
     opt.type = 'checkbox'
     opt.value = e
     opt.id = e
     opt.name = 'muscles'
+    opt.classList.add('opt')
     let label = document.createElement('label')
-    label.for = e
     label.innerText = e
-    document.getElementById("muscles").appendChild(opt)
-    document.getElementById('muscles').appendChild(label)
+    label.classList.add('opt-label')
+    label.append(opt)
+    div.appendChild(label)
+    div.classList.add('opt-div')
+    document.getElementById('muscles').appendChild(div)
 })
 
 allEquipment.forEach(e => {
+    let div = document.createElement('div')
     let opt = document.createElement('input')
     opt.type = 'checkbox'
     opt.value = e
     opt.id = e
     opt.name = 'equipment'
     let label = document.createElement('label')
-    label.for = e
     label.innerText = e
-    document.getElementById("equipment").appendChild(opt)
-    document.getElementById('equipment').appendChild(label)
+    label.classList.add('opt-label')
+    label.append(opt)
+    div.appendChild(label)
+    div.classList.add('opt-div')
+    document.getElementById('equipment').appendChild(div)
 })
 
 console.log(allEquipment, allMuscles)

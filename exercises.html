@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VS HACKS 2025</title>
+    <link rel="stylesheet" href="excercise.css" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
@@ -23,6 +24,14 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -51,34 +60,51 @@
     <main>
       <section id="filter">
         <form id="form">
-          <div>
-            <input type="radio" value="cardio" id="option1" name="type" />
-            <label for="option1">cardio</label>
+          <div class="form">
+            <div class="options">
+              <div>
+                <input type="radio" value="cardio" id="option1" name="type" />
+                <label for="option1">cardio</label>
+              </div>
+              <div>
+                <input type="radio" value="strength" id="option2" name="type" />
+                <label for="option2">strength</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="all"
+                  id="option3"
+                  name="type"
+                  checked
+                />
+                <label for="option3">All</label>
+              </div>
+            </div>
+
+            <div class="checks">
+              <div class="main-opts">
+                Muscles to train:
+                <div
+                  placeholder="filter by muscle group"
+                  id="muscles"
+                  name="muscles"
+                ></div>
+              </div>
+              <div class="main-opts">
+                Available equipment:
+                <div
+                  type="text"
+                  placeholder="filter by equipment"
+                  id="equipment"
+                  name="equipment"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div
-              placeholder="filter by muscle group"
-              id="muscles"
-              name="muscles"
-            ></div>
+          <div class="button-container">
+            <sl-button type="submit" id="submit">Submit</sl-button>
           </div>
-          <div>
-            <input type="radio" value="strength" id="option2" name="type" />
-            <label for="option2">strength</label>
-          </div>
-          <div>
-            <div
-              type="text"
-              placeholder="filter by equipment"
-              id="equipment"
-              name="equipment"
-            ></div>
-          </div>
-          <div>
-            <input type="radio" value="all" id="option3" name="type" checked />
-            <label for="option3">All</label>
-          </div>
-          <button type="submit">Submit</button>
         </form>
       </section>
       <section id="exercising">

@@ -1,0 +1,50 @@
+#muscles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+#equipment{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#form{
+    display: flex !important;
+    flex-direction: column;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    width: 15%;
+}
+
+.form{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.opt-label{
+    display: flex;
+    gap: 5px;
+}
+
+.main-opts{
+    color: white;
+}
+
